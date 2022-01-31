@@ -1,0 +1,7 @@
+- name: Run CIS Hardening Procedures
+  hosts: all
+  remote_user: chakeibuc
+  become: yes
+
+  roles:
+          - Ubuntu2004-CIS

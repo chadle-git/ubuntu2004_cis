@@ -738,7 +738,7 @@
         dest: /etc/bash.bashrc
         create: true
         regexp: '^umask '
-        line: 'umask 027'
+        line: 'umask 022'
 
     - name: "SCORED | 5.4.4 | PATCH | Ensure default user umask is 027 or more restrictive - /etc/profile"
       lineinfile:
@@ -746,7 +746,7 @@
         dest: /etc/profile
         create: true
         regexp: '^umask '
-        line: 'umask 027'
+        line: 'umask 022'
 
     - name: "SCORED | 5.4.4 | PATCH | Ensure default user umask is 027 or more restrictive - /etc/profile.d/99-umask.sh"
       lineinfile:
